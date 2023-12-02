@@ -30,8 +30,8 @@ import matplotlib.pyplot as plt
 #makes and saves a geodataframe of a grid given the center and corner points for that grid as 2D matrices
 
 def build_one_gridcell(LAT_COR, LON_COR, LAT_CTR, LON_CTR, loc):
-    ii=loc[0]
-    jj=loc[1]
+    ii=int(loc[0])
+    jj=int(loc[1])
 
     #print(LAT_CTR[ii,jj], LON_CTR[ii,jj]) #ctr
     sw = (LON_COR[ii, jj],LAT_COR[ii, jj]) #SW
